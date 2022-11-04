@@ -1,0 +1,116 @@
+nav li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style: none;
+}
+
+nav > ul{
+    margin-bottom: 0px;
+    background-color: rgb(131, 228, 230);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li:hover {
+    background-color: rgb(91, 203, 223);
+}
+
+nav li:hover a{
+    background-color: rgb(79, 225, 233);
+    color: black;
+}
+
+table{
+    table-layout: fixed;
+    width:70%;
+    border-collapse: collapse;
+    border: 3px solid rgb(62, 173, 185);
+    margin-left: 15%;
+    border-radius: 10px; 
+    border-style: double;
+}
+thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 20%;
+  }
+  
+  th, td {
+    padding: 20px;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color:rgb(122, 169, 196);
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: skyblue;
+  }
+
+    #rotate-icon{
+    background-color: rgb(173, 152, 251);
+    border: 2px solid rgb(83, 94, 208);
+    border-style: double;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 50px;
+   
+   
+}
+#rotate-icon
+{
+  transition: transform 0.3s ease-out;
+}
+#rotate-link:hover #rotate-icon
+{
+  transform: rotate(180deg);
+}
+
+.square{
+    margin-left: 59px;
+    margin-top:10px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(43, 102, 139);
+    transform: rotate(90deg);
+    animation: mymove 2s infinite;
+    border-style: double ;
+    border-radius: 10px;
+}
+@keyframes mymove {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+.increase{
+    margin-top:30px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(67, 133, 173);
+        transition: width 1s , height 1s;
+        border-style: dotted;
+
+}
+.increase:hover{
+    width: 200px;
+    height: 200px;
+}
+.blur{
+    padding:15px;
+    filter: blur(5px);
+}
+.capcity{
+    padding:15px;
+    filter: opacity(30%);
+}
